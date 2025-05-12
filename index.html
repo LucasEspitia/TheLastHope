@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Hope</title>
+  <link rel="stylesheet" href="Public/style.css">
+
+  <!--General Script for the background-->
+  <script src="Public/background.js" defer></script>
+  <!--Script for the variables-->
+  <script src="Models/constants.js" defer></script>
+  <script src="Models/preload.js" defer></script>
+
+                     <!--Scripts in view-->
+  <!--Content scripts-->
+  <script src = "Views/screen/screenStart.js" defer></script>
+  <script src = "Views/screen/cinematics.js" defer></script>
+  <script src = "Views/screen/tutorial.js" defer></script>
+  <script src = "Views/screen/settings.js" defer></script>
+  <script src = "Views/screen/levels.js" defer></script>
+  <script src = "Views/screen/credits.js" defer></script>
+  <script src = "Views/screen/gameover.js" defer></script>
+  <script src = "Views/screen/music.js" defer></script>
+  <script src = "Views/screen/win.js" defer></script>
+  <!--Videogame scripts-->
+  <script src="Views/videogame/map.js" defer></script>
+  <script src="Views/videogame/points.js" defer></script>
+  <script src="Views/videogame/menu.js" defer></script>
+  <script src= "Views/videogame/win.js" defer></script>
+
+                    <!--Scripts in Model-->
+  <!--Content scripts-->
+  <!--Videogame scripts-->
+  <script src="Models/survivor.js" defer></script>
+  <script src="Models/zombies.js" defer></script>
+    
+                <!--Scripts in Controller-->
+  <!--Content scripts-->
+  <script src="Controllers/page/cinematics.js" defer></script>
+  <script src="Controllers/page/tutorial.js" defer></script>
+  <script src="Controllers/page/settings.js" defer></script>
+  <script src="Controllers/page/levels.js" defer></script>
+  <script src="Controllers/page/credits.js" defer></script>
+  <script src="Controllers/page/music.js" defer></script>
+  <script src="Controllers/page/gameover.js" defer></script>
+  <!--Videogame scripts-->  
+ <script src="Controllers/videogame/controls.js" defer></script>
+ <script src="Controllers/videogame/levels.js" defer></script>
+ <script src="Controllers/videogame/gameover.js"defer></script>
+ <script src="Controllers/videogame/back_menu.js" defer></script>
+ <script src="Controllers/videogame/win.js" defer></script>
+ <script src="Controllers/videogame/elements.js" defer></script>
+ <script src="Controllers/videogame/main.js" defer></script>
+  <!--AUN NO LO HE UBICADO-->
+
+</head>
+<body> 
+    <div id="game-container">  
+        <div id="start"><button id="start_button">Click here to start the Game</button></div>   
+        <div id="logo_div">
+            <img id="logo" src="Public/Images/page/logos/logo_game.png" alt="The Last Hope">
+        </div>
+        <canvas id="canvas"></canvas>
+        <canvas id="panel_canvas"></canvas>  
+        <div id="menu-container">
+            <div id="menu">
+                <button class="buttons" id="play-btn" onclick="cinematic()">PLAY</button>
+                <button class="buttons" id="tutorial-btn">TUTORIAL</button>
+                <button class="buttons" id="settings">SETTINGS</button>
+                <button class="buttons" id="levels-btn">LEVELS</button>
+                <button class="buttons" id="credits-btn">CREDITS</button>
+            </div>
+        </div>
+ <!--This part is for the Tutorial-->
+        <div id="tutorial-container"></div>
+ <!--This part is for the settings-->
+       <div id="options-menu-container"></div>
+ <!--This part is for the levels-->
+       <div id="levels-container"></div> 
+ <!--This part is for the credits-->
+        <div id ="credits-container"></div> 
+ <!--This part is for the Cinematics-->
+        <div id ="cinematics-container"></div> 
+ <!--This is for the Gameover screen-->
+        <div id="gameover"></div>
+ <!--This is for the Pause Button in the game-->
+        <button id="go_menu_btn"></button>
+ <!--This is for start the Game in each level-->
+       <div id="gamescreen_start"></div>  
+ <!--This is for the Win condition--> 
+       <div id="win-animation"></div>     
+        <!--This part is for the music-->      
+        <div id="music-player">
+            <audio id="audio-player"></audio>
+            <button id="btn-open-container" class="play"></button>
+            <div id="sound-panel" class="sound-panel">
+                <button id="music-bck" class="btn-3d">X</button>
+                <h3>Sound Options</h3>
+                <div class="toggle">
+                    <label for="music-toggle">Music:</label>
+                    <input type="checkbox" id="music-toggle">
+                </div>
+            <div class="toggle">
+                <label for="effects-toggle">Sound Effects:</label>
+                <input type="checkbox" id="effects-toggle">
+            </div>
+            </div>
+        </div>             
+    </div>  
+</body>
+</html>
