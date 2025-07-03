@@ -1,4 +1,15 @@
-# Alto ahi... 
-Queria agregarle mas funcionalidades como recoger pistolas, granadas y asi, pero lo he dejado de lado. Si ves este repo y quieres completarlo, hazme colaborador, se agradeceria mucho. :)
+# Languages Used
+- HTML
+- CSS
+- JavaScript
+  
+## Objective
+Have you ever played Pacman? Well, this in theory is very similar but in a more interesting way, now you are chased by ZOMBIESS!!!, try to save yourself and collect as many points as possible.
+The game has several difficulties, after passing the first stages you'll see...
 
-El movimiento de los zombies es determinado por un algoritmo de aproximacion, al estilo Pacman. Usalo con mucha responsabilidad.
+Enjoy and don't be scared by the atmosphere of the game. 
+
+# Stop there... 
+I wanted to add more features like collecting guns, grenades and so on, but I have left it aside. If you see this repo and want to complete it, make me a contributor, it would be much appreciated. :)
+
+The movement of the zombies is determined by an approximation algorithm, Pacman style. Use it very responsibly.
